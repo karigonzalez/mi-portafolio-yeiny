@@ -1,0 +1,34 @@
+/* Custom CSS Styles - Paleta Violeta (#B541FA), Cian (#4FD2E9), Azul Marino (#192584), Gris Frío (#74706D) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selección de texto personalizada con Violeta */
+::selection {
+  background-color: #B541FA;
+  color: #FFFFFF;
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(6px);
+}
+
+/* Estilos de prioridad en el simulador */
+.priority-alta {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
+}
+
+.priority-normal {
+  background-color: #E0F2FE;
+  color: #0369A1;
+  border: 1px solid #7DD3FC;
+}
+
+.priority-garantia {
+  background-color: #F3E8FF;
+  color: #6B21A8;
+  border: 1px solid #B541FA;
+}

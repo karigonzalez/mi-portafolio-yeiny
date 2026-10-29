@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Profesional | Yeiny Karine Gonzalez Cifuentes</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-[#74706D]/10 text-slate-800 antialiased selection:bg-[#B541FA] selection:text-white">
+
+  <!-- HEADER / NAV -->
+  <header class="sticky top-0 z-50 bg-[#192584]/95 backdrop-blur-md text-white border-b border-[#4FD2E9]/30 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-[#B541FA] text-white flex items-center justify-center font-bold text-lg shadow-inner">
+          YG
+        </div>
+        <div>
+          <h1 class="font-bold text-base md:text-lg tracking-wide leading-tight">Yeiny Gonzalez C.</h1>
+          <p class="text-xs text-[#4FD2E9] font-medium">Customer Success & Operaciones B2B</p>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="#metricas" class="hover:text-[#4FD2E9] transition">Métricas</a>
+        <a href="#soluciones" class="hover:text-[#4FD2E9] transition">Soluciones & Casos</a>
+        <a href="#simulador" class="hover:text-[#4FD2E9] transition">Simulador Live</a>
+        <a href="#experiencia" class="hover:text-[#4FD2E9] transition">Trayectoria</a>
+        <a href="#contacto" class="bg-[#B541FA] text-white px-4 py-1.5 rounded-full font-semibold hover:bg-[#4FD2E9] hover:text-[#192584] transition shadow-sm">Contactar</a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="md:hidden text-slate-200 hover:text-white">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#192584] border-t border-[#4FD2E9]/20 px-4 py-3 space-y-2 text-sm">
+      <a href="#metricas" class="block py-1 hover:text-[#4FD2E9]">Métricas</a>
+      <a href="#soluciones" class="block py-1 hover:text-[#4FD2E9]">Soluciones & Casos</a>
+      <a href="#simulador" class="block py-1 hover:text-[#4FD2E9]">Simulador Live</a>
+      <a href="#experiencia" class="block py-1 hover:text-[#4FD2E9]">Trayectoria</a>
+      <a href="#contacto" class="block py-1 text-[#4FD2E9] font-bold">Contactar</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-b from-[#192584] to-[#121c63] text-white py-16 md:py-24 px-4 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center space-x-2 bg-white/10 border border-[#4FD2E9]/30 px-3.5 py-1.5 rounded-full text-xs font-medium text-[#4FD2E9] mb-6 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-[#4FD2E9] animate-pulse"></span>
+        <span>Disponible para Puestos Remotos / B2B</span>
+      </div>
+
+      <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight mb-6">
+        Especialista en Operaciones B2B, Customer Success y Gestión de Incidencias
+      </h2>
+
+      <p class="text-slate-300 max-w-3xl mx-auto text-base md:text-lg mb-8 leading-relaxed">
+        Transformo la atención al cliente en una ventaja competitiva. Experta en resolución de reclamos, escalamiento técnico de incidentes, optimización de SLA y control de calidad en comunicaciones escritas.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-3 text-xs md:text-sm font-semibold mb-10">
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-md text-slate-200">Zendesk & Jira</span>
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-md text-slate-200">Salesforce & SAP</span>
+        <span class="bg-white/10 border border-white/15 px-3.5 py-1.5 rounded-md text-slate-200">Google Workspace & Excel</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#simulador" class="bg-[#B541FA] text-white hover:bg-[#a22ee6] px-6 py-3 rounded-lg font-bold transition shadow-lg flex items-center justify-center space-x-2">
+          <span>Probar Simulador de Triaje</span>
+          <i data-lucide="play-circle" class="w-5 h-5"></i>
+        </a>
+        <a href="#contacto" class="bg-transparent border border-[#4FD2E9]/50 hover:bg-white/10 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center space-x-2">
+          <span>Enviar Mensaje</span>
+          <i data-lucide="mail" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICAS DESTACADAS -->
+  <section id="metricas" class="py-16 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h3 class="text-2xl md:text-3xl font-bold text-[#192584]">Métricas Impactantes & Resultados</h3>
+      <p class="text-[#74706D] text-sm md:text-base mt-2 font-medium">Demostración cuantitativa del valor aportado en roles previos</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-[#B541FA] transition">
+        <div class="w-12 h-12 bg-[#B541FA]/10 rounded-lg flex items-center justify-center text-[#B541FA] mb-4">
+          <i data-lucide="smile" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">+85% / >90%</div>
+        <div class="text-xs font-bold text-[#B541FA] uppercase tracking-wider mb-2">CSAT Registrado</div>
+        <p class="text-xs text-[#74706D]">Sosteniendo altos índices de satisfacción al usuario final en Educaria y Atento mediante respuestas estructuradas.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-[#B541FA] transition">
+        <div class="w-12 h-12 bg-[#4FD2E9]/20 rounded-lg flex items-center justify-center text-[#192584] mb-4">
+          <i data-lucide="clock" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">85%</div>
+        <div class="text-xs font-bold text-[#4FD2E9] uppercase tracking-wider mb-2">Cumplimiento de SLA</div>
+        <p class="text-xs text-[#74706D]">Optimización del tiempo de primera respuesta e incubación de tickets en entornos de soporte con Jira y Zendesk.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-[#B541FA] transition">
+        <div class="w-12 h-12 bg-[#B541FA]/10 rounded-lg flex items-center justify-center text-[#B541FA] mb-4">
+          <i data-lucide="check-circle" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">80 - 85%</div>
+        <div class="text-xs font-bold text-[#B541FA] uppercase tracking-wider mb-2">Resolución FCR</div>
+        <p class="text-xs text-[#74706D]">Resolución efectiva en el primer contacto mediante comunicación clara, protocolos sólidos y empatía en el trato.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:border-[#B541FA] transition">
+        <div class="w-12 h-12 bg-[#4FD2E9]/20 rounded-lg flex items-center justify-center text-[#192584] mb-4">
+          <i data-lucide="trending-up" class="w-6 h-6"></i>
+        </div>
+        <div class="text-3xl font-extrabold text-[#192584] mb-1">+70%</div>
+        <div class="text-xs font-bold text-[#4FD2E9] uppercase tracking-wider mb-2">Retención de Clientes</div>
+        <p class="text-xs text-[#74706D]">Gestión de objeciones y acompañamiento constante durante procesos de onboarding y garantía de servicio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS DE ESTUDIO / SOLUCIONES -->
+  <section id="soluciones" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-[#192584]">Soluciones Prácticas a Desafíos de Operaciones</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Caso 1 -->
+        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-[#B541FA] transition">
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-[#B541FA]/10 text-[#B541FA] text-xs font-bold px-3 py-1 rounded-full border border-[#B541FA]/30">Alineado a Vacante GU26-020</span>
+              <span class="text-xs text-[#74706D] font-mono">Soporte Escrito</span>
+            </div>
+            <h4 class="text-xl font-bold text-[#192584] mb-3">Clasificación, Triaje y Plantillas de Respuesta para Correos</h4>
+            <div class="space-y-3 text-sm text-[#74706D]">
+              <p><strong>Problema:</strong> Saturación de bandeja de entrada, tickets sin priorizar y demora en respuesta a consultas recurrentes.</p>
+              <p><strong>Solución Implementada:</strong> Diseño de una matriz de triaje por colores y prioridades, junto con una biblioteca de plantillas de respuesta personalizables por categoría de cliente.</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 border-t border-slate-200 flex justify-between items-center">
+            <span class="text-xs text-[#74706D]">Herramientas: Gmail, Zendesk, Sheets</span>
+            <button onclick="openModal('modal-caso1')" class="text-xs font-bold text-[#B541FA] hover:underline flex items-center space-x-1">
+              <span>Ver Plantilla Tipo</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Caso 2 -->
+        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between hover:border-[#B541FA] transition">
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-[#4FD2E9]/20 text-[#192584] text-xs font-bold px-3 py-1 rounded-full border border-[#4FD2E9]/40">Alineado a Vacante GU26-045</span>
+              <span class="text-xs text-[#74706D] font-mono">Garantías y Posventa</span>
+            </div>
+            <h4 class="text-xl font-bold text-[#192584] mb-3">Flujo de Posventa, Manejo de Objeciones y Garantías</h4>
+            <div class="space-y-3 text-sm text-[#74706D]">
+              <p><strong>Problema:</strong> Reclamos de clientes por demoras en cambio de producto o aplicación de garantía sin registro en CRM.</p>
+              <p><strong>Solución Implementada:</strong> Estandarización del flujo de validación documental, escalamiento con proveedores/técnicos e integración de encuesta de satisfacción post-resolución.</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 border-t border-slate-200 flex justify-between items-center">
+            <span class="text-xs text-[#74706D]">Herramientas: Salesforce, CRM, Excel</span>
+            <button onclick="openModal('modal-caso2')" class="text-xs font-bold text-[#B541FA] hover:underline flex items-center space-x-1">
+              <span>Ver Flujo de Garantía</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR INTERACTIVO -->
+  <section id="simulador" class="py-16 max-w-5xl mx-auto px-4">
+    <div class="text-center mb-10">
+      <span class="bg-[#B541FA]/10 text-[#B541FA] text-xs font-bold px-3 py-1 rounded-full border border-[#B541FA]/30">Demo Interactiva</span>
+      <h3 class="text-2xl md:text-3xl font-bold text-[#192584] mt-3">Simulador de Clasificación y Triaje de Tickets</h3>
+      <p class="text-[#74706D] text-sm mt-1 font-medium">Prueba interactiva de cómo categorizo y genero respuestas profesionales en segundos</p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-md overflow-hidden">
+      <div class="bg-[#192584] text-white p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <div class="w-3 h-3 rounded-full bg-red-400"></div>
+          <div class="w-3 h-3 rounded-full bg-[#4FD2E9]"></div>
+          <div class="w-3 h-3 rounded-full bg-[#B541FA]"></div>
+          <span class="text-xs text-slate-300 ml-2 font-mono">Simulador_Soporte_Ticketing.v1</span>
+        </div>
+        <span class="text-xs bg-white/10 px-2.5 py-1 rounded text-[#4FD2E9] font-mono">Zendesk / Mail Interface</span>
+      </div>
+
+      <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-xs font-bold text-[#192584] uppercase mb-2">1. Seleccionar Escenario de Cliente:</label>
+          <select id="ticket-select" class="w-full bg-slate-50 border border-slate-300 rounded-lg p-2.5 text-sm focus:ring-2 focus:ring-[#B541FA] focus:outline-none mb-4">
+            <option value="1">Reclamo de Garantía por Producto Defectuoso (GU26-045)</option>
+            <option value="2">Consulta de Estado de Solicitud de Servicio (GU26-020)</option>
+            <option value="3">Escalamiento Técnico Urgente / Caída de Acceso</option>
+          </select>
+
+          <label class="block text-xs font-bold text-[#192584] uppercase mb-2">Mensaje del Usuario Entrante:</label>
+          <div id="ticket-body" class="bg-slate-50 p-4 rounded-lg text-xs md:text-sm text-slate-700 italic border border-slate-200 min-h-[100px]">
+            Cargando mensaje...
+          </div>
+
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            <div>
+              <span class="block text-[10px] font-bold uppercase text-[#74706D]">Prioridad Asignada</span>
+              <span id="ticket-priority" class="text-xs font-bold px-2.5 py-1 rounded-full inline-block mt-1">Normal</span>
+            </div>
+            <div>
+              <span class="block text-[10px] font-bold uppercase text-[#74706D]">SLA Recomendado</span>
+              <span id="ticket-sla" class="text-xs font-semibold text-[#192584] block mt-1">< 4 Horas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-between">
+          <div>
+            <label class="block text-xs font-bold text-[#192584] uppercase mb-2">2. Respuesta Profesional Auto-Generada:</label>
+            <textarea id="response-template" readonly class="w-full bg-slate-50 border border-slate-300 rounded-lg p-3 text-xs md:text-sm text-slate-800 font-mono h-44 focus:outline-none resize-none"></textarea>
+          </div>
+
+          <div class="mt-4 flex space-x-2">
+            <button onclick="copyResponse()" class="flex-1 bg-[#192584] hover:bg-[#121c63] text-white py-2 px-4 rounded-lg text-xs font-bold transition flex items-center justify-center space-x-2">
+              <i data-lucide="copy" class="w-4 h-4"></i>
+              <span id="copy-btn-text">Copiar Respuesta</span>
+            </button>
+            <button onclick="simularEnvio()" class="bg-[#B541FA] hover:bg-[#a22ee6] text-white py-2 px-4 rounded-lg text-xs font-bold transition flex items-center justify-center space-x-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Simular Envío</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA Y EDUCACION -->
+  <section id="experiencia" class="py-16 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h3 class="text-2xl md:text-3xl font-bold text-[#192584]">Trayectoria Laboral y Formación</h3>
+        <p class="text-[#74706D] text-sm mt-1 font-medium">Experiencia consolidada en entornos B2B, Customer Success y tecnología</p>
+      </div>
+
+      <div class="relative border-l-2 border-[#B541FA]/40 ml-4 md:ml-32 space-y-8">
+        <!-- ETB -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#B541FA] border-2 border-white"></div>
+          <span class="hidden md:block absolute -left-32 top-1 text-xs font-bold text-[#74706D] w-24 text-right">May 2026 - Sept 2026</span>
+          <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+            <span class="md:hidden text-xs font-bold text-[#74706D] block mb-1">Mayo 2026 - Presente</span>
+            <h4 class="font-bold text-[#192584] text-base">Analista - Empresas, Mayoristas y Gobierno</h4>
+            <p class="text-xs text-[#74706D] font-medium">ETB (Empresa de Telecomunicaciones de Bogotá)</p>
+            <p class="text-xs text-slate-600 mt-2">Gestión de contratos B2B, trámite de PQR, seguimiento de acuerdos SLA mediante Salesforce, SAP RMCA y Remedy.</p>
+          </div>
+        </div>
+
+        <!-- Educaria -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#192584] border-2 border-white"></div>
+          <span class="hidden md:block absolute -left-32 top-1 text-xs font-bold text-[#74706D] w-24 text-right">2017 - 2026</span>
+          <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+            <span class="md:hidden text-xs font-bold text-[#74706D] block mb-1">2017 - 2026</span>
+            <h4 class="font-bold text-[#192584] text-base">Líder de Proyecto y Experiencia del Cliente</h4>
+            <p class="text-xs text-[#74706D] font-medium">Educaria Perú</p>
+            <p class="text-xs text-slate-600 mt-2">Liderazgo de Customer Success y soporte de la plataforma Alexia SIS. Gestión de tickets con Jira y Zendesk (CSAT > 85%).</p>
+          </div>
+        </div>
+
+        <!-- Atento -->
+        <div class="relative pl-6">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#B541FA] border-2 border-white"></div>
+          <span class="hidden md:block absolute -left-32 top-1 text-xs font-bold text-[#74706D] w-24 text-right">2008 - 2014</span>
+          <div class="bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+            <span class="md:hidden text-xs font-bold text-[#74706D] block mb-1">2008 - 2014</span>
+            <h4 class="font-bold text-[#192584] text-base">Asesora de Atención al Cliente</h4>
+            <p class="text-xs text-[#74706D] font-medium">Atento Perú / Colombia</p>
+            <p class="text-xs text-slate-600 mt-2">Resolución de incidencias escritas y telefónicas, logrando FCR del 80-85% y satisfacción superior al 90%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION DE CONTACTO -->
+  <section id="contacto" class="py-16 bg-[#192584] text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-2xl md:text-3xl font-bold mb-4">¿Hablamos sobre cómo puedo optimizar tus operaciones de soporte?</h3>
+      <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto mb-8">
+        Estoy disponible para entrevistas y evaluaciones técnicas para las posiciones de Soporte por Correo, Atención al Cliente y Garantías.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
+        <a href="https://wa.me/51964310280" target="_blank" class="w-full sm:w-auto bg-[#B541FA] hover:bg-[#a22ee6] text-white px-6 py-3 rounded-lg font-bold transition flex items-center justify-center space-x-2 shadow-md">
+          <i data-lucide="message-square" class="w-5 h-5"></i>
+          <span>Enviar WhatsApp (+51 964 310 280)</span>
+        </a>
+        <a href="mailto:ykgonzalez01@gmail.com" class="w-full sm:w-auto bg-[#4FD2E9] text-[#192584] hover:bg-white px-6 py-3 rounded-lg font-bold transition flex items-center justify-center space-x-2 shadow-md">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          <span>ykgonzalez01@gmail.com</span>
+        </a>
+      </div>
+
+      <p class="text-xs text-[#4FD2E9]">Lima, Perú | Disponible para trabajo remoto internacional</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#121c63] text-slate-400 text-xs py-6 text-center border-t border-[#4FD2E9]/20">
+    <p>© 2026 Yeiny Karine Gonzalez Cifuentes. Portafolio Web Profesional.</p>
+  </footer>
+
+  <!-- MODALES -->
+  <!-- Modal 1 -->
+  <div id="modal-caso1" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 text-slate-800 relative border-t-4 border-[#B541FA]">
+      <button onclick="closeModal('modal-caso1')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <h4 class="text-lg font-bold text-[#192584] mb-2">Plantilla Tipo: Respuesta a Consulta Escrita (GU26-020)</h4>
+      <p class="text-xs text-[#74706D] mb-4">Ejemplo de comunicación estructurada respetando tono profesional y empatía:</p>
+      <div class="bg-slate-50 border border-slate-200 p-4 rounded-lg font-mono text-xs text-slate-700 space-y-2 mb-4">
+        <p><strong>Asunto:</strong> Re: [Ticket #84920] Estado de su requerimiento - GU26-020</p>
+        <p>Estimado/a [Nombre del Cliente],</p>
+        <p>Gracias por contactarnos. Hemos recibido su consulta con respecto a [Detalle del caso].</p>
+        <p>Le confirmamos que su solicitud ya ha sido clasificada con prioridad [Alta/Media] y escalada con el equipo de operaciones. El tiempo estimado para enviarle la solución final es de [X horas/días].</p>
+        <p>Quedo a su entera disposición ante cualquier duda adicional.</p>
+        <p>Atentamente,<br><strong>Yeiny Gonzalez C.</strong><br>Soporte al Cliente & Operaciones</p>
+      </div>
+      <button onclick="closeModal('modal-caso1')" class="w-full bg-[#192584] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#121c63]">Cerrar Ventana</button>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal-caso2" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 text-slate-800 relative border-t-4 border-[#4FD2E9]">
+      <button onclick="closeModal('modal-caso2')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <h4 class="text-lg font-bold text-[#192584] mb-2">Flujo de Garantía y Posventa (GU26-045)</h4>
+      <p class="text-xs text-[#74706D] mb-4">Pasos estandarizados para la gestión efectiva de un reclamo de garantía:</p>
+      <ol class="list-decimal list-inside space-y-2 text-xs text-slate-700 mb-4">
+        <li><strong>Recepción y Registro:</strong> Apertura de caso en Zendesk/CRM con la documentación del cliente.</li>
+        <li><strong>Validación de Términos:</strong> Verificación de fechas, condiciones de compra e inspección técnica.</li>
+        <li><strong>Manejo de Objeción:</strong> Comunicación empática ofreciendo reemplazo, reparación o saldo a favor.</li>
+        <li><strong>Cierre y Encuesta CSAT:</strong> Notificación final al usuario y envío automático de encuesta de satisfacción.</li>
+      </ol>
+      <button onclick="closeModal('modal-caso2')" class="w-full bg-[#192584] text-white py-2 rounded-lg text-xs font-bold hover:bg-[#121c63]">Cerrar Ventana</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
